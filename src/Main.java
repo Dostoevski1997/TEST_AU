@@ -1,5 +1,5 @@
 import java.util.Arrays;
-import java.util.Random;
+
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
@@ -14,7 +14,6 @@ public class Main {
 
         double [] myArray;
         myArray = new double[10];
-        double [] Array = new double[10];
         for (int i =0; i< myArray.length; i++){
             myArray[i] = Math.random();
             System.out.println("array[" +  i + "] = " + myArray[i]);
