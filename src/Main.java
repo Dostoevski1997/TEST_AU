@@ -17,7 +17,7 @@ public class Main {
         double [] Array = new double[10];
         for (int i =0; i< myArray.length; i++){
             myArray[i] = Math.random();
-            System.out.println("double [i]"+ "=" + myArray[i]);
+            System.out.println("array[" +  i + "] = " + myArray[i]);
         }
         double max = Arrays.stream(myArray).max().getAsDouble();
         System.out.println("max = " + max);
