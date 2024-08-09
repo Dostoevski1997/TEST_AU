@@ -1,17 +1,31 @@
+import java.util.Arrays;
+import java.util.Random;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
+        System.out.println("Hello and welcome!");
+
         for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
             System.out.println("i = " + i);
         }
+
+        double [] myArray;
+        myArray = new double[10];
+        double [] Array = new double[10];
+        for (int i =0; i< myArray.length; i++){
+            myArray[i] = Math.random();
+            System.out.println("double [i]"+ "=" + myArray[i]);
+        }
+        double max = Arrays.stream(myArray).max().getAsDouble();
+        System.out.println("max = " + max);
+        double min = Arrays.stream(myArray).min().getAsDouble();
+        System.out.println("min = " + min);
+        double sr = Arrays.stream(myArray).average().getAsDouble();
+        System.out.println("sr = " + sr);
+        //System.out.println(myArray[i]);
+
     }
 }
