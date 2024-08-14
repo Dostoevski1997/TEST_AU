@@ -1,7 +1,7 @@
 public class Corner {
 
     public static void main(String[] args) {
-        int hours = 9;
+        int hours = 12;
         int minutes = 13;
         double corner = calculateCorner(hours, minutes);
         System.out.println("Угол между стрелками в " + hours +" часов" + " : " + minutes + " минут" + " = " + corner + " градусам");
@@ -14,8 +14,8 @@ public class Corner {
             }
             double hourPosition = (hours % 12 + minutes / 60.0) * 360 / 12;
             double minutePosition = minutes * 360 / 60;
-            double angle = Math.abs(hourPosition - minutePosition);
-            return Math.min(angle, 360 - angle);
+            double corner = Math.abs(hourPosition - minutePosition);
+            return Math.min(corner, 360 - corner);
         }
 
     }
