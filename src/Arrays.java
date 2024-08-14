@@ -1,9 +1,6 @@
-import java.util.Arrays;
-
-
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
-public class Main {
+public class Arrays {
     public static void main(String[] args) {
 
         System.out.println("Hello and welcome!");
@@ -18,11 +15,11 @@ public class Main {
             myArray[i] = Math.random();
             System.out.println("array[" +  i + "] = " + myArray[i]);
         }
-        double max = Arrays.stream(myArray).max().getAsDouble();
+        double max = java.util.Arrays.stream(myArray).max().getAsDouble();
         System.out.println("max = " + max);
-        double min = Arrays.stream(myArray).min().getAsDouble();
+        double min = java.util.Arrays.stream(myArray).min().getAsDouble();
         System.out.println("min = " + min);
-        double sr = Arrays.stream(myArray).average().getAsDouble();
+        double sr = java.util.Arrays.stream(myArray).average().getAsDouble();
         System.out.println("sr = " + sr);
         //System.out.println(myArray[i]);
 
